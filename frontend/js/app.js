@@ -16,18 +16,8 @@
 							lightbox = $link.data( 'elementor-open-lightbox' ),
 							options  = $link.parents( '.tiktok-pixel-for-elementor' ).data( 'wpl_tracker' );
 
-						// Отменим переход по ссылке.
 						event.preventDefault();
 
-						/**
-						 * Если есть ссылка для перехода, добавим задержку, чтобы трекинг успел отработать.
-						 *
-						 * Магия правил:
-						 *
-						 * 1. `'%23' !== href.substr( 0, 3 )` - когда по кнопке открывается попап
-						 * 2. `href && '#' !== href` - когда ставят пустые ссылки
-						 * 3. `( ! lightbox || 'no' === lightbox )` - когда по кнопке открывается лайтбокс.
-						 */
 						if ( href && '#' !== href && '%23' !== href.substr( 0, 3 ) && ( ! lightbox || 'no' === lightbox ) ) {
 							track_element( options );
 							console.log( 'Click with link' );
