@@ -23,7 +23,7 @@ This plugin requires Elementor plugin to be installed.
 
 e.g.
 
-1. Upload `gh-tiktok-pixel.php` to the `/wp-content/plugins/` directory
+1. Upload `gh-tiktok-pixel` to the `/wp-content/plugins/` directory
 2. Activate the plugin through the 'Plugins' menu in WordPress
 3. After you've uploaded and activated the plugin, please go to Elementor's settings.Then click GH tiktok pixel tab. You can input your TikTok Pixel ID on the field available. 
 
